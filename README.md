@@ -1,0 +1,2 @@
+# hoststool
+Update hosts.
