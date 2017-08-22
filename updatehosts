@@ -31,10 +31,8 @@ else
         fi
     fi
 fi
-# wget https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts -qO /tmp/hosts && sudo sh -c 'cat /tmp/hosts > /etc/hosts'
-# wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -qO /tmp/hosts && sudo sh -c 'cat /tmp/hosts > /etc/hosts'
 
-echo "got file from github. process file and going to overwrite the hosts"
+echo "get file from github. process file and going to overwrite the hosts"
 
 $CMD
 
@@ -59,8 +57,8 @@ sh -c 'cat /tmp/hosts /etc/hosts.org > /etc/hosts'
 # rm -f /tmp/hosts
 echo "Done."
 
-echo "Head 25 lines:"
+echo "head 25 lines:"
 head -n 25 /etc/hosts
-echo "Tail 15 lines:"
+echo "tail 15 lines:"
 tail -n 15 /etc/hosts
 
